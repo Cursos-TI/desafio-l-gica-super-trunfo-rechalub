@@ -87,25 +87,32 @@ int main() {
     
      if (populacao1 > populacao2) {
      printf("Cidade 1 tem maior população!\n");
-    } else {
+    } else  if (populacao1 < populacao2){ 
      printf("Cidade 2 tem maior população!\n");
-     }
+    } else {
+     printf("Cidade tem população igual!\n");
+    }
      if (area1 > area2){
         printf("Cidade 1 tem maior área!\n");
-     } else {
+     } else  if (area1 < area2){
         printf("Cidade 2 tem maior área!\n");
+     } else {
+      printf("Cidade tem área igual!\n");
      }
      if (pib1 > pib2){
         printf("Cidade 1 tem maior pib!\n");
-     } else{
+     } else if (pib1 < pib2){
         printf("Cidade 2 tem maior pib!\n");
-     } 
+     } else {
+      printf("Cidade te pib igual!\n");
+     }
      if (pontos_turisticos1 > pontos_turisticos2){
         printf("Cidade 1 tem maior pontos turisticos!\n");
-     } else{
+     } else if (pontos_turisticos1 < pontos_turisticos2){
         printf("Cidade 2 tem maior pontos turisticos!\n");
-     } 
-     
+     } else {
+      printf("Cidade tem mesmo número de pontos turísticos!\n");
+     }     
 
     // Exibição dos Resultados:
     printf("A cidade vencedora é: %s\n", cidade);
